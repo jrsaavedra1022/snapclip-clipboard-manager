@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SnapClip — Clipboard Manager for macOS</title>
+  <meta name="description" content="SnapClip is a fast, lightweight clipboard manager for macOS. Search, pin and reuse your clipboard history in seconds."/>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; margin:0; background:#0b0b0c; color:#f2f2f2; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 20px; }
+    .card { background:#151518; border:1px solid #26262b; border-radius:16px; padding:28px; }
+    h1 { font-size:44px; margin:0 0 10px; }
+    p { color:#c9c9cf; line-height:1.6; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    a.btn { text-decoration:none; padding:12px 16px; border-radius:12px; border:1px solid #2f2f36; background:#1d1d22; color:#fff; }
+    a.primary { background:#2b6cff; border-color:#2b6cff; }
+    ul { margin:16px 0 0; color:#c9c9cf; }
+    .small { font-size:13px; color:#8b8b95; margin-top:18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SnapClip - Clipboard Manager</h1>
+      <p>A fast, lightweight clipboard manager for macOS. Instantly access your clipboard history, search, pin important items, and work keyboard-first.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="#" id="appstore">View on the Mac App Store</a>
+        <a class="btn" href="https://github.com/jrsaavedra1022/snapclip-support">Support</a>
+      </div>
+
+      <ul>
+        <li>Global shortcut to open your clipboard panel</li>
+        <li>Real-time search</li>
+        <li>Keyboard navigation</li>
+        <li>Pin items</li>
+        <li>Privacy-first: data stays on your Mac</li>
+      </ul>
+
+      <p class="small"><b>Developer by:</b> Jose Saavedra</p>
+      <p class="small">© <span id="y"></span> SnapClip. Built for macOS.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    // Update this when you have your App Store link:
+    document.getElementById("appstore").href = "https://apps.apple.com/";
+  </script>
+</body>
+</html>
